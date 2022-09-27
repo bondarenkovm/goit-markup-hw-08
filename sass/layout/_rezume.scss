@@ -1,3 +1,9 @@
+@media screen and (max-width: 1199px) {
+  .rezume {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
 .rezume {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -30,4 +36,5 @@
   position: absolute;
   bottom: 0;
   left: 0;
+}
 }

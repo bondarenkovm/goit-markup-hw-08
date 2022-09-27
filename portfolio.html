@@ -2,6 +2,7 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Портфоліо</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,22 +27,29 @@
           >
           <ul class="menu list">
             <li><a class="menu__link link" href="./index.html">Студія</a></li>
-            <li><a class="menu__link menu__link--current link" href="./portfolio.html">Портфоліо</a></li>
+            <li>
+              <a class="menu__link menu__link--current link" href="./portfolio.html">Портфоліо</a>
+            </li>
             <li><a class="menu__link link" href="#contacts">Контакти</a></li>
           </ul>
         </nav>
+        <button class="mobile-menu-button js-open-menu" type="button">
+          <svg class="mobile-menu-button__icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </button>
         <ul class="contacts-page list">
-          <li>
+          <li class="contacts-page__item">
             <a class="contacts-page__link link" href="mailto:info@devstudio.com">
-              <svg class="contacts-page__envelope" width="16" height="12">
+              <svg class="contacts-page__envelope">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="contacts-page__item">
             <a class="contacts-page__link link" href="+380961111111">
-              <svg class="contacts-page__smartphone" width="10" height="16">
+              <svg class="contacts-page__smartphone">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -49,10 +57,34 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close js-close-menu" type="button">
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+          <ul class="list">
+            <li><a class="link" href="./index.html">Студія</a></li>
+            <li><a class="link" href="./portfolio.html">Портфоліо</a></li>
+            <li><a class="link" href="">Контакти</a></li>
+          </ul>
+          <ul class="list">
+            <li><a class="link" href="+380961111111">+380961111111</a></li>
+            <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          </ul>
+          <ul class="list">
+            <li><a class="link" href="" lang="en">Instagram</a></li>
+            <li><a class="link" href="" lang="en">Twitter</a></li>
+            <li><a class="link" href="" lang="en">Facebook</a></li>
+            <li><a class="link" href="" lang="en">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
     <!--main-->
     <main>
-      <section class="portfolio">
+      <!-- <section class="portfolio">
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="button-list list">
@@ -231,10 +263,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!--footer-->
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
       <div class="container page-footer__container">
         <div>
           <a class="logo page-footer__logo link" href="./index.html" lang="en"
@@ -338,6 +370,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
