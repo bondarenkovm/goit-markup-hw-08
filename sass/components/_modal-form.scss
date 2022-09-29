@@ -1,8 +1,7 @@
 .modal-form-title {
   font-family: var(--primary-font);
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font(20px, 30px);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color-theme-dark);
@@ -70,8 +69,7 @@
   &::placeholder {
     display: block;
     font-family: var(--primary-font);
-    font-size: 12px;
-    line-height: 1.16;
+    @include font(14px, 16px);
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
@@ -85,7 +83,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  line-height: 1.71;
+  @include font(12px, 14px);
   color: var(--secondary-text-color-theme-dark);
 }
 .modal-form-check-link {
@@ -139,4 +137,17 @@
   &:focus {
     background-color: var(--active-hero-button-background-color);
   }
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-title {
+    @include font(20px, 23px);
+  }
+.modal-form-check-line{
+  @include font(14px, 24px);
+}
+.modal-form-input-message{
+  &::placeholder{
+    @include font(12px, 14px);
+  }
+}
 }

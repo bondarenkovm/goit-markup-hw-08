@@ -64,20 +64,40 @@
               <use href="./images/symbol-defs.svg#icon-close-menu"></use>
             </svg>
           </button>
-          <ul class="list">
-            <li><a class="link" href="./index.html">Студія</a></li>
-            <li><a class="link" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="link" href="">Контакти</a></li>
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link mobile-menu__link--current link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="">Контакти</a>
+            </li>
           </ul>
-          <ul class="list">
-            <li><a class="link" href="tel:+380961111111">+380961111111</a></li>
-            <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <ul class="mobile-menu__contact-list list">
+            <li class="mobile-menu__contact-item">
+              <a class="mobile-menu__link-phone link" href="tel:+380961111111">+380961111111</a>
+            </li>
+            <li class="mobile-menu__contact-item">
+              <a class="mobile-menu__link-mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
           </ul>
-          <ul class="list">
-            <li><a class="link" href="" lang="en">Instagram</a></li>
-            <li><a class="link" href="" lang="en">Twitter</a></li>
-            <li><a class="link" href="" lang="en">Facebook</a></li>
-            <li><a class="link" href="" lang="en">LinkedIn</a></li>
+          <ul class="mobile-menu__social-list list">
+            <li class="mobile-menu__social-item">
+              <a class="mobile-menu__social-link link" href="" lang="en">Instagram</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a class="mobile-menu__social-link link" href="" lang="en">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a class="mobile-menu__social-link link" href="" lang="en">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a class="mobile-menu__social-link link" href="" lang="en">LinkedIn</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -704,12 +724,16 @@
                 >
               </li>
               <li class="address__item">
-                <a class="address__link address__link--secondary link" href="mailto:info@devstudio.com"
+                <a
+                  class="address__link address__link--secondary link"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="address__item">
-                <a class="address__link address__link--secondary link" href="+380961111111">+38 096 111 11 11</a>
+                <a class="address__link address__link--secondary link" href="+380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -717,7 +741,7 @@
         <div class="footer-social">
           <p class="footer-social__text">приєднуйтесь</p>
           <ul class="footer-social-list list">
-            <li >
+            <li>
               <a href="" class="footer-social-list__link">
                 <svg
                   lang="en"
